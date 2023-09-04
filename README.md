@@ -124,7 +124,22 @@ git
   136  vim /etc/zabbix_agentd.conf 
   137  systemctl restart zabbix-agent
   138  less /var/log/zabbix/zabbix_agentd.log 
-  139  tailf /var/log/zabbix/zabbix_agentd.log 
+  139  tailf /var/log/zabbix/zabbix_agentd.log
+
+git
+  552  git clone https://github.com/andaks1/zabbix01.git && cd ./zabbix01
+  553  vim README.md 
+  554  git status
+  555  git add .
+  556  git commit -am "Второе задание - Финал"
+  557  git status
+  558  git push
+  559  vim README.md 
+  560  git statua
+  561  git status
+  562  git add
+  563  git commit -am "Добавлены Фамилия Имя в название лабораторной"
+  564  git push
 ```
 ---
 ## Задание 3 со звёздочкой*
