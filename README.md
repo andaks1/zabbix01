@@ -54,6 +54,21 @@
  1024  systemctl status zabbix-server
  1025  netstat -puntal | grep 443
  1026  systemctl restart zabbix-server zabbix-agent nginx php8.2-fpm
+
+git
+
+  553  vim README.md 
+  554  git status
+  555  git add .
+  556  git commit -am "Второе задание - Финал"
+  557  git status
+  558  git push
+  559  vim README.md 
+  560  git statua
+  561  git status
+  562  git add
+  563  git commit -am "Добавлены Фамилия Имя в название лабораторной"
+  564  git push
 ```
 ---
 
