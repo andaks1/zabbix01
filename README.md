@@ -74,6 +74,43 @@
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 4. Приложите в файл README.md текст использованных команд в GitHub
 
+
+### Ответ на задание 2.
+1. Скриншот вкладки Configuration->Hosts:
+![hosts](img/zadanie2/02_01.png)
+
+2. Скриншот лога без ошибок:
+![noerrors](img/zadanie2/02_02.png)
+
+3. Последнее время обновления данных:
+![latest_data](img/zadanie2/02_03.png)
+
+4. Список команд по установке агента:
+```bash
+  117  yum install zabbix-agent
+  118  sestatus 
+  119  vim /etc/zabbix_agentd.conf 
+  120  systemctl status zabbix_agent
+  121  systemctl status zabbix-agent
+  122  systemctl start zabbix-agent
+  123  systemctl status zabbix-agent
+  124  hostname
+  125  ifconfig 
+  126  firewall-cmd --list
+  127  firewall-cmd --list-all
+  128  firewall-cmd --list-services
+  129  firewall-cmd --add
+  130  firewall-cmd --add-service=zabbix-agent
+  131  firewall-cmd --add-service=zabbix-agent --permanent
+  132  firewall-cmd --list-services
+  133  tailf /var/log/zabbix/zabbix_agentd.log 
+  134  systemctl restart zabbix-agent
+  135  less /var/log/zabbix/zabbix_agentd.log 
+  136  vim /etc/zabbix_agentd.conf 
+  137  systemctl restart zabbix-agent
+  138  less /var/log/zabbix/zabbix_agentd.log 
+  139  tailf /var/log/zabbix/zabbix_agentd.log 
+```
 ---
 ## Задание 3 со звёздочкой*
 Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
